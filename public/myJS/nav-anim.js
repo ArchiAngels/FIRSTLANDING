@@ -1,20 +1,14 @@
-let nav = document.getElementById('perm-nav');
+let nav2 = document.getElementById('nav-anim');
+let btn = document.getElementById('btn-nav');
 
 let navIsVisible = false;
 
-window.addEventListener('scroll',()=>{
-    if(window.scrollY > 94){
-        if(!navIsVisible){
-            swipeNav();
-        }
-    }else{
-        if(navIsVisible){
-            swipeNav();
-        }
-    }
+btn.addEventListener('click',()=>{
+    swipeNav();
 })
 
 function swipeNav(){
     navIsVisible = !navIsVisible;
-    nav.classList.toggle('hide');
+    btn.innerHTML = navIsVisible?`<p>Open</p>`:`<p>Close</p>`;
+    nav2.classList.toggle('hide');
 }

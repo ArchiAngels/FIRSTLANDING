@@ -11,65 +11,69 @@
 </head>
 <body>
     <div class="permanent-nav-wrap">
-        <nav>
+        <div class="circle" id="btn-nav"><p>Close</p></div>
+        <nav id="nav-anim">
             <ul class = "navigator_ul nav_in_body" id ='perm-nav'>
                 <li><img src="./img/asd.png" alt="Late boss"> <span>ATE</span> <p class = 'font-light'>company</p></li>
                 <li><a href="#">О нас</a></li>
-                <li><a href="#WeOffer">Услуги</a></li>
                 <li><a href="#abillity">Преимущества</a></li>
                 <li><a href="#projects">Проекты</a></li>
+                <li><a href="#WeOffer">Услуги</a></li>
                 <li><a href="#footer">Контакты</a></li>
+                <li><div id="GodBtn"><p>Version 1</p></div></li>
             </ul>
         </nav>
     </div>
     <div class="particles_wrap">
         <canvas id='anim'></canvas>
     </div>
-    <div class = "Main_landing" id='AboutUs'>
-        <header>
-            <div class="content-header">
-                <div class="header_block_60">
-                    <div class="background-header-60">
-                        <p>o</p>
+    <div class = "Main_landing" id='AboutUs' data-type="1">
+        <div class="mini-block">
+            <header>
+                <div class="content-header">
+                    <div class="header_block_60">
+                        <div class="background-header-60">
+                            <p>o</p>
+                        </div>
+                        <nav>
+                            <ul class = "navigator_ul nav_in_header">
+                                <li><img src="./img/asd.png" alt="Late boss"> <span>ate</span> <p class = 'font-light'>company</p></li>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Проекты</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <div class="text-content-header-60">
+                            <div>
+                                <h2 class = 'big p30'>Комплексное решение</h2>
+                                <h2 class = 'big p30'>для вашего бизнеса</h2>
+                            </div>
+                            <div class='small_text'>
+                                <p>Сделаем сайт с конверсионным лендингом</p>
+                                <p>по современным технологиям</p>
+                            </div>
+                            <div class='wrap_btn'>
+                                <div class = 'button-modal btn-main purple big p18'><span>Заказать сайт</span></div>
+                            </div>
+                            <div>
+                                <p class = 'p18'>г. Минск, ул. Уманская д.123, офис. 27</p>
+                                <a class = 'p16' href="tel:+375291549054">+375 (29) 154-90-54</a>
+                            </div>
+                        </div>
                     </div>
-                    <nav>
-                        <ul class = "navigator_ul nav_in_header">
-                            <li><img src="./img/asd.png" alt="Late boss"> <span>ate</span> <p class = 'font-light'>company</p></li>
-                            <li><a href="#">О нас</a></li>
-                            <li><a href="#">Услуги</a></li>
-                            <li><a href="#">Проекты</a></li>
-                            <li><a href="#">Контакты</a></li>
-                        </ul>
-                    </nav>
-                    <div class="text-content-header-60">
-                        <div>
-                            <h2 class = 'big p30'>Комплексное решение</h2>
-                            <h2 class = 'big p30'>для вашего бизнеса</h2>
-                        </div>
-                        <div class='small_text'>
-                            <p>Сделаем сайт с конверсионным лендингом</p>
-                            <p>по современным технологиям</p>
-                        </div>
-                        <div class='wrap_btn'>
-                            <div class = 'button-modal btn-main purple big p18'><span>Заказать сайт</span></div>
-                        </div>
-                        <div>
-                            <p class = 'p18'>г. Минск, ул. Уманская д.123, офис. 27</p>
-                            <a class = 'p16' href="tel:+375291549054">+375 (29) 154-90-54</a>
+                    <div class="header_block_40">
+                        <div class="laptop_wrap">
+                            <img src="./img/laptop.jpg" alt="Laptop example">
+        
                         </div>
                     </div>
                 </div>
-                <div class="header_block_40">
-                    <div class="laptop_wrap">
-                        <img src="./img/laptop.jpg" alt="Laptop example">
     
-                    </div>
-                </div>
-            </div>
-
-        </header>
-        <main>
-            <div class="wrap-our-abilities" id ='abillity'>
+            </header>
+        </div>
+        <main id='main-cont'>
+            <div class="wrap-our-abilities" id ='abillity' data-type="2">
                 <div class="mini-block">
                     <div class="title-category">
                         <h2 class='p30 big'>Наши преимущества:</h2>
@@ -153,7 +157,7 @@
                 </div>
             </div>
 
-            <div class="wrap-our-works" id = 'projects'>
+            <div class="wrap-our-works" id = 'projects' data-type="3">
                 <div class="mini-block">
                     <div class="category-background">
                         <img src="./img/work-space.jpg" alt="Work space">
@@ -174,7 +178,7 @@
                 </div>
             </div>
 
-            <div class="wrap-our-works 2">
+            <div class="wrap-our-works 2" data-type="3">
                 <div class="mini-block">
                     <div class="category-background">
                         <img src="./img/work-space.jpg" alt="Work space">
@@ -191,7 +195,7 @@
                 </div>
             </div>
 
-            <div class="wrap-what-we-offer" id ='WeOffer'>
+            <div class="wrap-what-we-offer" id ='WeOffer' data-type="4">
                 <div class="mini-block">
                     <div class="category-background">
                         <img src="./img/what-we-offer.jpg" alt="Work space">
@@ -246,7 +250,7 @@
                 </div>
             </div>
         </main>
-        <footer id='footer'>
+        <footer id='footer' data-type="5">
             <div class="wrap-footer-bgc">
                 <img src="./img/footer-bgc.jpg" alt="Metal power">
             </div>
@@ -280,7 +284,8 @@
         </footer>
     </div>
     <script src="public/module_js/animated_bgc.js"></script>
-    <!-- <script src="./public/myJS/nav-anim.js"></script> -->
+    <script src="./public/myJS/nav-anim.js"></script>
     <script src="./public/myJS/activeNavLink.js"></script>
+    <script src="./public/myJS/changeV.js"></script>
 </body>
 </html>
