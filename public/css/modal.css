@@ -1,0 +1,22 @@
+.darkWrap{
+    width:0vw;
+    height:0vh;
+    background: rgba(0,0,0,0.44);
+    color:#fff;
+    font-family: 'myFont-Light';
+    transition: 0.66s all;
+
+    position:absolute;
+    z-index: 5;
+    top:0;
+    left: 0;
+}
+.block_inside_wrap{
+    width:80%;
+    height:80%;
+    margin:10% auto;
+}
+.ON{
+    width: 100vw;
+    height:100vh;
+}

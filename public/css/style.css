@@ -8,6 +8,7 @@
 }
 .hide{
     display:none;
+    color:transparent;
 }
 p,ul,html,body{
     margin:0;
@@ -96,6 +97,7 @@ canvas {
 }
 body{
     display: flex;
+    overflow-x: hidden;
     justify-content: center;
 }
 .Main_landing{
@@ -247,6 +249,10 @@ ul{
 
 .laptop_wrap img{
     margin-left: -16px;
+}
+.wrap-our-abilities{
+    padding:15px 0 0 0;
+    background: #fff;
 }
 
 .wrap-our-abilities,.wrap-our-works,.wrap-what-we-offer{
@@ -419,7 +425,7 @@ footer{
     width:100%;
     height:250px;
     color:#fff;
-    /* margin-top:25vh; */
+    margin-bottom:25vh;
 
 }
 .footer-l span{
@@ -460,3 +466,4 @@ footer{
     font-size:16px;
     font-family: "myFont-Light";
 }
+

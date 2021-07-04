@@ -6,24 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Late company</title>
     <link rel="shortcut icon" href="./img/asd.png" type="image/x-icon">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
     <link rel="stylesheet" href="public/css/animatedbgc.css">
     <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="./public/css/googlemap.css">
+    <link rel="stylesheet" href="./public/css/modal.css">
 </head>
 <body>
-    <div class="permanent-nav-wrap">
-        <div class="circle" id="btn-nav"><p>Close</p></div>
-        <nav id="nav-anim">
-            <ul class = "navigator_ul nav_in_body" id ='perm-nav'>
-                <li><img src="./img/asd.png" alt="Late boss"> <span>ATE</span> <p class = 'font-light'>company</p></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#abillity">Преимущества</a></li>
-                <li><a href="#projects">Проекты</a></li>
-                <li><a href="#WeOffer">Услуги</a></li>
-                <li><a href="#footer">Контакты</a></li>
-                <li><div id="GodBtn"><p>Version 1</p></div></li>
-            </ul>
-        </nav>
-    </div>
     <div class="particles_wrap">
         <canvas id='anim'></canvas>
     </div>
@@ -39,9 +29,9 @@
                             <ul class = "navigator_ul nav_in_header">
                                 <li><img src="./img/asd.png" alt="Late boss"> <span>ate</span> <p class = 'font-light'>company</p></li>
                                 <li><a href="#">О нас</a></li>
-                                <li><a href="#">Услуги</a></li>
-                                <li><a href="#">Проекты</a></li>
-                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#projects">Проекты</a></li>
+                                <li><a href="#WeOffer">Услуги</a></li>
+                                <li><a href="#footer">Контакты</a></li>
                             </ul>
                         </nav>
                         <div class="text-content-header-60">
@@ -54,7 +44,7 @@
                                 <p>по современным технологиям</p>
                             </div>
                             <div class='wrap_btn'>
-                                <div class = 'button-modal btn-main purple big p18'><span>Заказать сайт</span></div>
+                                <div class = 'button-modal btn-main purple big p18 event-btn'><span>Заказать сайт</span></div>
                             </div>
                             <div>
                                 <p class = 'p18'>г. Минск, ул. Уманская д.123, офис. 27</p>
@@ -157,6 +147,61 @@
                 </div>
             </div>
 
+            <div class="wrap-what-we-offer" id ='WeOffer' data-type="4">
+                <div class="mini-block">
+                    <div class="category-background">
+                        <img src="./img/what-we-offer.jpg" alt="Work space">
+                    </div>
+                    <div class="title-category-offer offer special">
+                        <h2 class='p30 big'>Наши услуги</h2>
+                        <div class="logo">
+                            <img src="./img/asd-large.png" alt="Late boss"> <span>ate</span> <p class = 'font-light'>company</p>
+                        </div>
+                    </div>
+                    <div class="offer-content">
+
+                        <div class="offer-card">
+                            <div class="offer-wrap-img">
+                                <img src="./img/cards.jpg" alt="Banners web">
+                            </div>
+                            <div class="offer-wrap-text">
+                                <p>Создание рекламного<br/>
+                                    баннера и упаковки</p>
+                            </div>
+                            <div class='wrap_btn'>
+                                <div class = 'button-modal btn-offer black big p18 offer-btn event-btn'><span>Заказать</span></div>
+                            </div>
+                        </div>
+
+                        <div class="offer-card">
+                            <div class="offer-wrap-img">
+                                <img src="./img/worker.jpg" alt="Worker person">
+                            </div>
+                            <div class="offer-wrap-text">
+                                <p>Разработка дизайна<br/>
+                                    сайта и лендинга</p>
+                            </div>
+                            <div class='wrap_btn'>
+                                <div class = 'button-modal btn-offer black big p18 offer-btn event-btn'><span>Заказать</span></div>
+                            </div>
+                        </div>
+
+                        <div class="offer-card">
+                            <div class="offer-wrap-img">
+                                <img src="./img/program.jpg" alt="Programming laptop">
+                            </div>
+                            <div class="offer-wrap-text">
+                                <p>Верстка сайтов<br/>
+                                    и лендингов</p>
+                            </div>
+                            <div class='wrap_btn'>
+                                <div class = 'button-modal btn-offer black big p18 offer-btn event-btn'><span>Заказать</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- change -->
             <div class="wrap-our-works" id = 'projects' data-type="3">
                 <div class="mini-block">
                     <div class="category-background">
@@ -194,62 +239,16 @@
                     </div>
                 </div>
             </div>
+            <!-- change -->
 
-            <div class="wrap-what-we-offer" id ='WeOffer' data-type="4">
-                <div class="mini-block">
-                    <div class="category-background">
-                        <img src="./img/what-we-offer.jpg" alt="Work space">
-                    </div>
-                    <div class="title-category-offer offer special">
-                        <h2 class='p30 big'>Наши услуги</h2>
-                        <div class="logo">
-                            <img src="./img/asd-large.png" alt="Late boss"> <span>ate</span> <p class = 'font-light'>company</p>
-                        </div>
-                    </div>
-                    <div class="offer-content">
-
-                        <div class="offer-card">
-                            <div class="offer-wrap-img">
-                                <img src="./img/cards.jpg" alt="Banners web">
-                            </div>
-                            <div class="offer-wrap-text">
-                                <p>Создание рекламного<br/>
-                                    баннера и упаковки</p>
-                            </div>
-                            <div class='wrap_btn'>
-                                <div class = 'button-modal btn-offer black big p18 offer-btn'><span>Заказать</span></div>
-                            </div>
-                        </div>
-
-                        <div class="offer-card">
-                            <div class="offer-wrap-img">
-                                <img src="./img/worker.jpg" alt="Worker person">
-                            </div>
-                            <div class="offer-wrap-text">
-                                <p>Разработка дизайна<br/>
-                                    сайта и лендинга</p>
-                            </div>
-                            <div class='wrap_btn'>
-                                <div class = 'button-modal btn-offer black big p18 offer-btn'><span>Заказать</span></div>
-                            </div>
-                        </div>
-
-                        <div class="offer-card">
-                            <div class="offer-wrap-img">
-                                <img src="./img/program.jpg" alt="Programming laptop">
-                            </div>
-                            <div class="offer-wrap-text">
-                                <p>Верстка сайтов<br/>
-                                    и лендингов</p>
-                            </div>
-                            <div class='wrap_btn'>
-                                <div class = 'button-modal btn-offer black big p18 offer-btn'><span>Заказать</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </main>
+        <!-- google map -->
+        <div id="map"></div>
+        <div id="content">Pososi</div>
+
+
+        <!--  -->
         <footer id='footer' data-type="5">
             <div class="wrap-footer-bgc">
                 <img src="./img/footer-bgc.jpg" alt="Metal power">
@@ -282,10 +281,19 @@
                 </div>
             </div>
         </footer>
+        <div class ="darkWrap hide">
+            <div class='block_inside_wrap'>${text}</div>
+        </div>
     </div>
     <script src="public/module_js/animated_bgc.js"></script>
-    <script src="./public/myJS/nav-anim.js"></script>
-    <script src="./public/myJS/activeNavLink.js"></script>
-    <script src="./public/myJS/changeV.js"></script>
+    <!-- <script src="./public/myJS/nav-anim.js"></script> -->
+    <!-- <script src="./public/myJS/activeNavLink.js"></script> -->
+    <!-- <script src="./public/myJS/changeV.js"></script> -->
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaHL57-VoOZRqSIZ6c2oKMZUDC0sSYRwA&callback=initMap"
+  type="text/javascript"></script>
+
+  <script src="./public/myJS/myMap.js"></script>
+  <script src="./public/myJS/modal.js"></script>
 </body>
 </html>
